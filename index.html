@@ -3,107 +3,21 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>モデルを選ぶより、役割を分ける｜Noguchi Daily 2026-10-04</title>
+<title>AIに任せる前に、合格条件を決める｜Noguchi Daily 2026-10-05</title>
 <style>:root{--ink:#17241d;--muted:#627069;--paper:#f4f0e7;--card:#fffdfa;--line:#d7ddd6;--green:#175d45;--gold:#d69a3c}*{box-sizing:border-box}body{margin:0;color:var(--ink);background:radial-gradient(circle at 8% 0,#d69a3c28,transparent 30rem),radial-gradient(circle at 94% 7%,#175d4520,transparent 34rem),var(--paper);font-family:"Yu Gothic UI","Hiragino Kaku Gothic ProN",system-ui,sans-serif;line-height:1.75}.wrap{width:min(1080px,calc(100% - 30px));margin:auto}header{padding:58px 0 34px}.eyebrow{color:var(--green);font-size:11px;font-weight:900;letter-spacing:.17em}h1{margin:10px 0 17px;font-size:clamp(38px,7vw,70px);line-height:1.08}.lead{max-width:820px;color:var(--muted);font-size:17px}.hero{display:grid;grid-template-columns:1.3fr .7fr;gap:24px;margin-bottom:38px;padding:27px;border-radius:24px;background:linear-gradient(135deg,#143d30,#277052);color:#fff}.hero p{margin:0;color:#ffffffc9}.question{align-self:center;padding-left:18px;border-left:3px solid var(--gold);font-weight:900;font-size:18px}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.card{padding:24px;border:1px solid var(--line);border-radius:21px;background:var(--card)}.meta{display:flex;justify-content:space-between;gap:12px;color:var(--muted);font-size:11px}.tag{color:var(--green);font-weight:900}.card h2{font-size:21px;line-height:1.45}.card p{font-size:14px}.why{padding:13px 15px;border-left:3px solid var(--green);background:#edf3ee;color:var(--muted);font-size:13px}.why b{display:block;color:var(--ink)}a{display:inline-block;margin-top:12px;color:var(--green);font-size:12px;font-weight:900}.action{margin:36px 0 55px;padding:25px;border:1px solid var(--line);border-radius:22px;background:#fff}footer{padding-bottom:35px;color:var(--muted);font-size:11px}@media(max-width:760px){.hero,.grid{grid-template-columns:1fr}}</style>
 </head>
-<body>
-<div class="wrap">
-<header>
-<div class="eyebrow">NOGUCHI DAILY · 2026.10.04</div>
-<h1>モデルを選ぶより、<br>役割を分ける。</h1>
-<p class="lead">9月28日〜10月2日の公式発表から7件。速い日常処理、複数モデルでの検証、定期実行、モデル移行まで、AIを継続運用するための設計をまとめました。</p>
-</header>
-<section class="hero">
-<div>
-<h2>今日の見取り図</h2>
-<p>一つの「最強モデル」にすべてを任せるより、速い下書き、強い検証、長時間の実行を役割分担する流れが鮮明です。同時にモデルの更新・廃止も速いため、モデル名ではなく仕事の役割を基準に運用を組むことが重要になります。</p>
-</div>
-<div class="question">今日の問い<br>そのAIが変わっても、仕事は回り続けるか。</div>
-</section>
+<body><div class="wrap">
+<header><div class="eyebrow">NOGUCHI DAILY · 2026.10.05</div><h1>AIに任せる前に、<br>合格条件を決める。</h1><p class="lead">9月28日〜10月1日の公式発表から7件。長時間エージェント、設計支援、画像解析、調達基盤まで、AIを成果につなげる「評価基準と現場データ」に注目しました。</p></header>
+<section class="hero"><div><h2>今日の見取り図</h2><p>AIは、コード・設計・画像・調達を横断して実行側へ進んでいます。しかし成果を安定させる鍵は、モデルの能力よりも、参照する現場情報、許可された範囲、そして完了を判定できる合格条件です。</p></div><div class="question">今日の問い<br>AIは何を満たせば「完了」なのか。</div></section>
 <main class="grid">
-<article class="card">
-<div class="meta">
-<span class="tag">AIモデル・実務</span>
-<time>2026.09.28</time>
-</div>
-<h2>Claude Sonnet 5.5、日常業務を高速化</h2>
-<p>AnthropicはClaude Sonnet 5.5を発表。Sonnet 5より30％以上高速で、課題あたりのコストを最大30％抑えながら、コード修正や文書・スライド・表計算など範囲の明確な仕事に向けています。</p>
-<div class="why">
-<b>重要な理由</b>最高性能だけでなく、処理速度と一件あたりの費用がモデル選択の軸になります。<b>あなたへの応用</b>日次ニュースの一次整理や見積資料の下書きは高速モデル、公開前・回答前の検証は上位モデル、と役割を分けられます。</div>
-<a href="https://www.anthropic.com/claude-sonnet-5-5" target="_blank" rel="noopener noreferrer">Anthropic公式 →</a>
-</article>
-<article class="card">
-<div class="meta">
-<span class="tag">個人開発</span>
-<time>2026.09.29</time>
-</div>
-<h2>GPT-6.1 Sol、Copilotで一般提供</h2>
-<p>GitHubはGPT-6.1 SolをCopilotへ段階的に一般提供。エージェント型の開発やターミナル作業を、より少ないトークンと手順で進める設計で、VS Code、CLI、Web、モバイルなどに展開します。</p>
-<div class="why">
-<b>重要な理由</b>コード生成だけでなく、調査・変更・確認までをまとめて進める用途が標準化します。<b>あなたへの応用</b>個人開発では「機能を作る」だけでなく、テスト・説明文・公開確認までを一つの依頼単位にできます。</div>
-<a href="https://github.blog/changelog/2026-09-29-gpt-6-1-sol-in-github-copilot/" target="_blank" rel="noopener noreferrer">GitHub公式 →</a>
-</article>
-<article class="card">
-<div class="meta">
-<span class="tag">複数モデル</span>
-<time>2026.09.30</time>
-</div>
-<h2>HydraFusion、複数AIで回答を検証</h2>
-<p>GitHubはVS CodeとCopilotアプリでHydraFusionの研究プレビューを開始。単一モデル、段階的な引き継ぎ、複数モデルによる批評という三つの進め方を選び、途中経過も確認できます。</p>
-<div class="why">
-<b>重要な理由</b>重要な仕事では、一つのAIの回答を別のAIに批評させる工程を組み込めます。<b>あなたへの応用</b>調達条件や製造可否の整理では、第一案と反対意見を分け、不明条件だけを人へ戻す運用が有効です。</div>
-<a href="https://github.blog/changelog/2026-09-30-hydrafusion-in-vs-code-and-the-github-copilot-app/" target="_blank" rel="noopener noreferrer">GitHub公式 →</a>
-</article>
-<article class="card">
-<div class="meta">
-<span class="tag">定期実行</span>
-<time>2026.10.01</time>
-</div>
-<h2>VS Code、AI作業を時間指定で自動実行</h2>
-<p>GitHub Copilotの9月版では、時間・日・週単位の定期実行、複数エージェント結果の統合、作業セッションからのPR作成、注意が必要な作業の表示などが追加されました。</p>
-<div class="why">
-<b>重要な理由</b>AIが「その場の相談相手」から、定期的に仕事を進める運用担当へ近づきます。<b>あなたへの応用</b>調達予定、設備情報、鉄道発表を定刻に確認し、差分がある時だけ人が見る仕組みに展開できます。</div>
-<a href="https://github.blog/changelog/2026-10-01-github-copilot-in-vs-code-september-2026-releases/" target="_blank" rel="noopener noreferrer">GitHub公式 →</a>
-</article>
-<article class="card">
-<div class="meta">
-<span class="tag">運用・移行</span>
-<time>2026.10.02</time>
-</div>
-<h2>Copilot、複数モデルを廃止・後継へ移行</h2>
-<p>GitHubはGemini 3.5/3.6 Flash、Kimi K2.7 Code、Claude Opus 4.7の廃止と後継モデルを案内。固定したモデルを使うワークフローや連携は更新が必要です。</p>
-<div class="why">
-<b>重要な理由</b>モデル名を業務手順へ直接埋め込むと、提供終了のたびに止まります。<b>あなたへの応用</b>「高速整理」「慎重な検証」のように役割で管理し、標準モデルと代替モデルを一つずつ決めておくと移行が楽です。</div>
-<a href="https://github.blog/changelog/2026-10-02-selected-models-in-github-copilot-deprecated/" target="_blank" rel="noopener noreferrer">GitHub公式 →</a>
-</article>
-<article class="card">
-<div class="meta">
-<span class="tag">鉄道旅行</span>
-<time>2026.09.30</time>
-</div>
-<h2>東京メトロ×ソニック、10月5日始動</h2>
-<p>東京メトロは「ソニック・ザ・ヘッジホッグ」35周年企画を10月5日から開始。東西線15000系のラッピング車両、デジタルスタンプラリー、オリジナル24時間券などを展開します。</p>
-<div class="why">
-<b>重要な理由</b>移動そのものを目的化する、都市鉄道ならではの期間限定企画です。<b>あなたへの応用</b>24時間券とスタンプ地点を組み合わせ、東西線の車両撮影と沿線散策を一日の小旅行として組めます。</div>
-<a href="https://www.tokyometro.jp/news/2026/225451.html" target="_blank" rel="noopener noreferrer">東京メトロ公式 →</a>
-</article>
-<article class="card">
-<div class="meta">
-<span class="tag">鉄道・現場体験</span>
-<time>2026.10.02</time>
-</div>
-<h2>松本で乗務員・車両基地を一日体験</h2>
-<p>JR東日本は10月24・25日、松本統括センターと車両センターで乗務員業務や車両基地を体験する企画を実施。18歳以上、各日4人、150分、参加費は5万円です。</p>
-<div class="why">
-<b>重要な理由</b>少人数で運転・車両の現場へ深く入る、高密度な体験型旅行です。<b>あなたへの応用</b>価格は高めですが、鉄道の運用・保全を仕事目線でも観察できる機会です。空き状況と取消条件を確認して判断できます。</div>
-<a href="https://event.jreast.co.jp/activity/detail/a143/a143-26102425" target="_blank" rel="noopener noreferrer">JR東日本公式 →</a>
-</article>
+<article class="card"><div class="meta"><span class="tag">AIエージェント</span><time>2026.09.10</time></div><h2>OpenAI、長時間作業向けAgents API</h2><p>OpenAIはCodexの実行基盤を使うAgents APIを公開ベータで提供。管理された環境でコードやファイルを扱い、途中成果を保存しながら数日に及ぶ作業や、複数エージェントの並列実行を支えます。</p><div class="why"><b>重要な理由</b>AI導入の難所が「一回答」から、長い作業を安全に継続・再開・監査する運用へ移っています。<b>あなたへの応用</b>日次ニュースや調達調査では、情報源・件数・禁止操作・公開前確認を合格条件として固定できます。</div><a href="https://openai.com/index/introducing-the-agents-api/" target="_blank" rel="noopener noreferrer">OpenAI公式 →</a></article>
+<article class="card"><div class="meta"><span class="tag">Obsidian</span><time>2026.10.01</time></div><h2>Obsidian 1.14.4、検索とBasesを改善</h2><p>Obsidianはデスクトップ／モバイル1.14.4を公開。ファイルエクスプローラー等でフルパス検索に対応し、除外語に一致するフォルダー配下も非表示に。Basesのカンバンやテーブルも改善されました。</p><div class="why"><b>重要な理由</b>ノートが増えるほど、内容だけでなく保存場所を含む検索と除外条件が効きます。<b>あなたへの応用</b>チャット記録の検索で <code>-Archive</code> のような除外を使い、現行ルールや最近の記録に絞れます。</div><a href="https://obsidian.md/changelog/" target="_blank" rel="noopener noreferrer">Obsidian公式 →</a></article>
+<article class="card"><div class="meta"><span class="tag">FA・設計</span><time>2026.09.29</time></div><h2>オムロン、AIで設計・保全工数を半減へ</h2><p>オムロンはAIを活用した設計支援ソフトウェアを提供開始。熟練者に依存しやすい制御設計と保全業務を対象に、工数50％以上の削減を掲げています。</p><div class="why"><b>重要な理由</b>製造AIの価値が、一般的な文書作成ではなく、熟練判断を含む具体的な工程時間で測られ始めています。<b>あなたへの応用</b>まず設計変更、エラー解析、保全のどこに時間を使っているかを記録し、AI導入前後を同じ指標で比べられます。</div><a href="https://www.omron.com/jp/ja/news/2026/09/c0929.html" target="_blank" rel="noopener noreferrer">オムロン公式 →</a></article>
+<article class="card"><div class="meta"><span class="tag">FA機器</span><time>2026.09.28</time></div><h2>オムロン、制御盤を小さくする「盤レス化」</h2><p>オムロンは制御機器を盤外へ配置して外部配線を減らすCabinet-Free Solutionを強化。設備構成の簡素化、立ち上げ期間短縮、柔軟性と保全性の向上を狙います。</p><div class="why"><b>重要な理由</b>人手不足への対応は、自動化ソフトだけでなく、配線・交換・保守が簡単な物理設計にもあります。<b>あなたへの応用</b>調達時は単価だけでなく、盤設計、配線、交換時間、予備品点数を含む総工数で比較する視点が持てます。</div><a href="https://www.omron.com/global/en/news/2026/09/c0928.html" target="_blank" rel="noopener noreferrer">オムロン公式 →</a></article>
+<article class="card"><div class="meta"><span class="tag">画像解析・保全</span><time>2026.09.30</time></div><h2>JR西日本、写真から数を数える生成AI</h2><p>JR西日本は生成AI画像解析「mitococa SUU」を発表。鉄道やホテルなどで実証を進め、写真内の対象物を数える作業を支援し、2027年初旬の製品版を目指します。</p><div class="why"><b>重要な理由</b>専用画像AIを一から作るのではなく、現場写真から棚卸し・点検を支援する方向が広がります。<b>あなたへの応用</b>部品棚や納品物は、AIの計数結果に確信度と人の再確認欄を付け、二重計数を減らす試験ができます。</div><a href="https://www.westjr.co.jp/press/" target="_blank" rel="noopener noreferrer">JR西日本公式 →</a></article>
+<article class="card"><div class="meta"><span class="tag">調達・ガバナンス</span><time>2026.09.10</time></div><h2>米GSA、AI調達を従量制・共通契約へ</h2><p>米国GSAは政府機関向けChatGPT契約を発表。10月1日開始予定の27カ月契約で、割引された従量制価格と政府横断の導入枠組みを整えます。</p><div class="why"><b>重要な理由</b>AI調達では、席数だけでなく利用量、価格安定期間、安全な共通条件の設計が重要になります。<b>あなたへの応用</b>社内導入も「誰が使うか」だけでなく、用途別の利用量、上限、ログ、契約終了時の移行条件を比較表にできます。</div><a href="https://www.gsa.gov/about-gsa/newsroom/news-releases/gsa-expands-onegov-ai-offerings-with-discounted-openais-chatgpt-09102026" target="_blank" rel="noopener noreferrer">GSA公式 →</a></article>
+<article class="card"><div class="meta"><span class="tag">地域交通・旅</span><time>2026.10.01</time></div><h2>草津線、小説と写真で巡る物語列車</h2><p>JR西日本、甲賀市、湖南市などは「草津線物語列車」を発表。小説の舞台を実際に訪ねる没入型周遊企画として、沿線の風景と物語を結びます。</p><div class="why"><b>重要な理由</b>地域交通を単なる移動手段ではなく、物語を体験するメディアとして活用する試みです。<b>あなたへの応用</b>乗車前に物語を読み、各駅で写真と短いメモをObsidianへ残す「旅の記録テンプレート」と相性が良い企画です。</div><a href="https://www.westjr.co.jp/press/" target="_blank" rel="noopener noreferrer">JR西日本公式 →</a></article>
 </main>
-<section class="action">
-<h2>今日の小さな実践</h2>
-<p>普段のAI作業を「Routine（速い定型処理）」「Review（慎重な検証）」「Long-running（定期・長時間）」の三列に分け、それぞれに標準モデル、確認条件、代替モデルを一つずつ書いてみましょう。</p>
-</section>
-<footer>掲載内容は発表時点の情報です。機能の提供状況、イベントの運行・販売・空き状況は各公式ページで再確認してください。過去記事は archive フォルダーに保存しています。</footer>
-</div>
-</body>
-</html>
+<section class="action"><h2>今日の小さな実践</h2><p>AIに任せたい仕事を一つ選び、「参照してよい情報」「してはいけない操作」「完了と判断する三つの条件」を一枚に書き出してみましょう。</p></section>
+<footer>掲載内容は発表時点の情報です。機能の提供状況、製品仕様、契約条件、イベント詳細は各公式ページで再確認してください。過去記事は archive フォルダーに保存しています。</footer>
+</div></body></html>
